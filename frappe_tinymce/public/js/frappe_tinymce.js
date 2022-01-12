@@ -30,7 +30,7 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
 
             setup: function(editor) {
                 that.editor_id = editor.id
-                editor.on('EditorChange', function(e) {
+                editor.on('Change', function(e) {
                     that.parse_validate_and_set_in_model(e.level.content);
                 });
                 editor.on('init', function (e) {
@@ -42,12 +42,14 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
     }
 
     set_formatted_input(value){
-        if(this.activeEditor){
+        if (!this.frm.doc.__setContent){
             if(value){
                 this.activeEditor.setContent(value)
             }else{
                 this.activeEditor.setContent("")
             }
         }
+        this.frm.doc.__setContent = 1
+
     }
 }
