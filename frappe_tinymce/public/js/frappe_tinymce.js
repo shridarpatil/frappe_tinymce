@@ -27,6 +27,7 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
             entity_encoding: 'raw',
             convert_urls: true,
             content_css: false,
+            toolbar_sticky: true,
 
             setup: function(editor) {
                 that.editor_id = editor.id
