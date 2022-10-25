@@ -17,7 +17,7 @@ app_include_css = "/assets/frappe_tinymce/css/frappe_tinymce.css"
 # app_include_js = "/assets/frappe_tinymce/js/frappe_tinymce.js"
 
 app_include_js = [
-    "https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.2/tinymce.min.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.2.0/tinymce.min.js",
     "/assets/frappe_tinymce/js/frappe_tinymce.js"
 ]
 

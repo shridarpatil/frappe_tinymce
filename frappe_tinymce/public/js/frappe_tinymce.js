@@ -21,7 +21,7 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
             fontsize_formats: '10px 11px 12px 14px 15px 16px 18px 24px 36px',
             plugins: [
               'autoresize', 'autolink', 'charmap', 'emoticons', 'fullscreen', 'help',
-              'hr', 'image', 'imagetools', 'link', 'lists', 'paste', 'searchreplace',
+              'image', 'link', 'lists', 'searchreplace',
               'table', 'visualblocks', 'visualchars', 'wordcount',
             ],
             entity_encoding: 'raw',
