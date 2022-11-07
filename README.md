@@ -14,7 +14,7 @@ Replace frappe's Quill Text Editor with tinyMCE Text Editor
 
 ```bench --site [sitename] install-app frappe_tinymce```
 
-![image](https://user-images.githubusercontent.com/11792643/148810998-603cfbf7-5c7d-4cb9-8903-1d6527c05d80.png)
+![image](https://user-images.githubusercontent.com/11792643/200249709-9edff738-0625-485d-a916-c0e7afbc8579.png)
 
 
 
