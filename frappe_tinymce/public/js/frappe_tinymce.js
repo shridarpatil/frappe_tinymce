@@ -44,15 +44,20 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
         this.activeEditor = tinymce.activeEditor
     }
 
-    set_formatted_input(value){
-        if (this.frm && !this.frm.doc.__setContent){
-            if(value){
-                this.activeEditor.setContent(value)
-            }else{
-                this.activeEditor.setContent("")
+    set_formatted_input(value) {
+        if (this.frm) {
+            if (!this.frm.doc.__setContent) {
+                if (value) {
+                    this.activeEditor.setContent(value)
+                } else {
+                    this.activeEditor.setContent("")
+                }
+                this.frm.doc.__setContent = 1
             }
         }
-        this.frm.doc.__setContent = 1
+    }
 
+    get_input_value() {
+        return this.activeEditor.getContent()
     }
 }
