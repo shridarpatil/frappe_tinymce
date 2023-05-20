@@ -53,7 +53,7 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
                 this.activeEditor.setContent("")
             }
         }
-        this.frm.doc.__setContent = 1
+        //this.frm.doc.__setContent = 1
 
     }
 }
