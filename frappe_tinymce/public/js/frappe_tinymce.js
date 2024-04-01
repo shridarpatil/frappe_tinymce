@@ -30,7 +30,7 @@ frappe.ui.form.ControlTextEditor = class ControlTextEditor extends frappe.ui.for
             content_css: false,
             toolbar_sticky: true,
             promotion: false,
-            link_default_target: "_blank",
+            default_link_target: "_blank",
 
             setup: function(editor) {
                 that.editor_id = editor.id
